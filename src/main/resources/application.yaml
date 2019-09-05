@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      host: ${host:localhost}
+      port: ${port:27017}
+      database: ${database:integration-hw}
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
